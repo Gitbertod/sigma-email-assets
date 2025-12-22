@@ -12,6 +12,31 @@
       img { border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: nearest-neighbor; }
       a img { border: 0; }
       p { margin: 0; padding: 0; }
+      
+      /* Responsive design */
+      @media only screen and (max-width: 620px) {
+        .container-table {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .content-table {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .header-table, .footer-table, .animation-img {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+        }
+        td[class="content-cell"] {
+          width: 100% !important;
+          padding: 10px !important;
+        }
+        img[class="header-img"] {
+          width: 100px !important;
+          max-width: 100px !important;
+        }
+      }
     </style>
   </head>
 
@@ -26,28 +51,31 @@
       border="0"
       cellspacing="0"
       cellpadding="0"
-      style="width: 100%; padding: 40px 0; background: #ececec; border-collapse: collapse;"
+      class="container-table"
+      style="width: 100%; max-width: 100%; padding: 20px 0; background: #ececec; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
     >
       <tbody>
       <tr>
-        <td align="center" style="padding: 0; margin: 0;">
+        <td align="center" style="padding: 0; margin: 0; mso-padding-alt: 0;">
           <table
             width="600"
             cellpadding="0"
             cellspacing="0"
             border="0"
-            style="width: 600px; background: #ececec; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+            class="content-table"
+            style="width: 600px; max-width: 600px; background: #ececec; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0 auto;"
           >
             <!-- HEADER -->
             <tr>
-              <td align="center" valign="top" style="padding: 0; margin: 0; width: 600px;">
+              <td align="center" valign="top" style="padding: 0; margin: 0; width: 600px; mso-padding-alt: 0;">
                 <table
                   width="600"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
+                  class="header-table"
                   background="https://gitbertod.github.io/sigma-email-assets/assets/headerSigmaGold.png"
-                  style="width: 600px; height: 200px; background: url('https://gitbertod.github.io/sigma-email-assets/assets/headerSigmaGold.png') center / cover no-repeat; border-collapse: collapse;"
+                  style="width: 600px; max-width: 600px; height: 200px; background: url('https://gitbertod.github.io/sigma-email-assets/assets/headerSigmaGold.png') center / cover no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
                 >
                   <!--[if gte mso 9]>
                   <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:200px;">
@@ -55,13 +83,14 @@
                     <v:textbox inset="0,0,0,0">
                   <![endif]-->
                   <tr>
-                    <td align="center" valign="middle" style="padding: 25px; height: 200px; font-family: Arial, sans-serif;">
+                    <td align="center" valign="middle" style="padding: 25px; height: 200px; font-family: Arial, sans-serif; mso-padding-alt: 25px;">
                       <img
                         src="https://gitbertod.github.io/sigma-email-assets/assets/SIGMASAFI.png"
+                        class="header-img"
                         width="150"
                         height="auto"
                         border="0"
-                        style="display: block; margin: 0 auto 15px; max-width: 150px; width: 150px;"
+                        style="display: block; margin: 0 auto 15px; max-width: 150px; width: 150px; height: auto; outline: none;"
                         alt="Logo Sigma"
                       />
                       <div style="font-size: 15px; line-height: 1.5; margin: 0; color: #ffffff; text-align: center;">
@@ -84,14 +113,15 @@
 
             <!-- ANIMACIÓN CENTRAL -->
             <tr>
-              <td align="center" style="padding: 0; margin: 0; width: 600px;">
+              <td align="center" style="padding: 0; margin: 0; width: 600px; mso-padding-alt: 0;">
                 <img
                   src="https://gitbertod.github.io/sigma-email-assets/assets/animacionSigmaOptim.gif"
+                  class="animation-img"
                   style="
                     display: block;
                     width: 600px;
+                    max-width: 600px;
                     height: auto;
-                    max-width: 100%;
                     border: 0;
                     outline: none;
                   "
@@ -103,14 +133,15 @@
 
             <!-- FOOTER CORPORATIVO -->
             <tr>
-              <td align="center" style="padding: 0; margin: 0; background: #ececec; width: 600px;">
+              <td align="center" style="padding: 0; margin: 0; background: #ececec; width: 600px; mso-padding-alt: 0;">
                 <table
                   width="600"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
+                  class="footer-table"
                   background="https://gitbertod.github.io/sigma-email-assets/assets/footerSigma.png"
-                  style="width: 600px; height: 200px; background: url('https://gitbertod.github.io/sigma-email-assets/assets/footerSigma.png') center / cover no-repeat; border-collapse: collapse;"
+                  style="width: 600px; max-width: 600px; height: 200px; background: url('https://gitbertod.github.io/sigma-email-assets/assets/footerSigma.png') center / cover no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
                 >
                   <!--[if gte mso 9]>
                   <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:200px;">
@@ -118,34 +149,50 @@
                     <v:textbox inset="0,0,0,0">
                   <![endif]-->
                   <tr>
-                    <td align="center" valign="middle" style="padding: 0; width: 600px; height: 200px;">
-                      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="width: 100%; border-collapse: collapse;">
+                    <td align="center" valign="middle" style="padding: 0; width: 600px; height: 200px; mso-padding-alt: 0;">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                         <tr>
-                          <td align="center" valign="middle" style="padding: 20px;">
-                            <!--[if mso]>
-                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.sigmasafi.pe/navidad" style="height:44px;v-text-anchor:middle;width:120px;" arcsize="0%" stroke="f" fill="t">
-                              <v:fill type="solid" color="#4b0000" />
-                              <w:p><w:pPr><w:pStyle w:val="Hyperlink" /></w:pPr><w:r><w:rStyle w:val="Hyperlink" /><w:t>Ver Tarjeta</w:t></w:r></w:pPr></w:p>
-                            </v:roundrect>
-                            <![endif]-->
-                            <a
-                              href="https://www.sigmasafi.pe/navidad"
-                              target="_blank"
-                              style="
-                                background-color: #4b0000;
-                                color: #ffffff;
-                                padding: 12px 24px;
-                                text-decoration: none;
-                                font-size: 16px;
-                                font-weight: bold;
-                                font-family: Arial, sans-serif;
-                                display: inline-block;
-                                mso-padding-alt: 12px 24px;
-                                mso-border-alt: 1px solid #4b0000;
-                              "
-                            >
-                              Ver Tarjeta
-                            </a>
+                          <td align="center" valign="middle" style="padding: 20px; mso-padding-alt: 20px;">
+                            <p style="margin: 0 0 15px 0; font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; color: #4b0000;">
+                              Ver saludo en:
+                            </p>
+                            <table width="auto" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0 auto;">
+                              <tr>
+                                <!-- ICONO WEB -->
+                                <td align="center" style="padding: 0 10px; mso-padding-alt: 0 10px;">
+                                  <a href="https://www.sigmasafi.pe/navidad" target="_blank" style="display: inline-block; text-decoration: none; border-radius: 50%; width: 45px; height: 45px; background-color: #ffffff; line-height: 45px; text-align: center;">
+                                    <span style="font-size: 22px; color: #4b0000; font-weight: bold; font-family: Arial, sans-serif;">🌐</span>
+                                  </a>
+                                </td>
+                                <!-- ICONO YOUTUBE -->
+                                <td align="center" style="padding: 0 10px; mso-padding-alt: 0 10px;">
+                                  <a href="https://www.youtube.com/watch?v=R8sPJOguQc4" target="_blank" style="display: inline-block; text-decoration: none;">
+                                    <img 
+                                      src="https://gitbertod.github.io/sigma-email-assets/assets/youtubeIcon.png" 
+                                      width="45" 
+                                      height="45" 
+                                      border="0" 
+                                      style="display: block; border-radius: 50%; outline: none;"
+                                      alt="YouTube"
+                                    />
+                                  </a>
+                                </td>
+                                <!-- ICONO LINKEDIN -->
+                                <td align="center" style="padding: 0 10px; mso-padding-alt: 0 10px;">
+                                  <a href="#" target="_blank" style="display: inline-block; text-decoration: none; border-radius: 50%; width: 45px; height: 45px; background-color: #ffffff; line-height: 45px; text-align: center;">
+                                    <img 
+                                      src="https://gitbertod.github.io/sigma-email-assets/assets/linkedinIcon.png" 
+                                      width="45" 
+                                      height="45" 
+                                      border="0" 
+                                      style="display: block; border-radius: 50%; outline: none;"
+                                      alt="YouTube"
+                                    />
+                                  </a>
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                       </table>
@@ -158,9 +205,9 @@
                 </table>
 
                 <!-- LEGAL -->
-                <table width="600" cellpadding="0" cellspacing="0" border="0" style="width: 600px; border-collapse: collapse; margin-top: 15px;">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" style="width: 600px; max-width: 600px; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 15px auto 0;">
                   <tr>
-                    <td align="center" style="padding: 0; margin: 0;">
+                    <td align="center" style="padding: 0; margin: 0; mso-padding-alt: 0;">
                       <p
                         style="
                           margin: 15px 0;
